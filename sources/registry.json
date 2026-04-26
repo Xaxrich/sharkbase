@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "videos": [
+    {
+      "bv": "BV1GBPGzSE4u",
+      "url": "https://www.bilibili.com/video/BV1GBPGzSE4u",
+      "title": "Antigravity+Flutter+Stitch打造惊艳移动应用",
+      "uploader": "GoldenSpiderAI",
+      "transcript_path": "E:\\bili2text\\.b2t\\transcripts\\original\\Antigravity-Flutter-Stitch打造惊艳移动应用-新技能-20260426-204107.txt",
+      "metadata_path": "E:\\bili2text\\.b2t\\metadata\\Antigravity-Flutter-Stitch打造惊艳移动应用-新技能-20260426-204107.json",
+      "wiki_page": "wiki/videos/BV1GBPGzSE4u-Antigravity-Flutter-Stitch打造惊艳移动应用.md",
+      "ingested_at": "2026-04-26T20:41:07",
+      "transcribe_engine": "sensevoice",
+      "char_count": 5000,
+      "tags": ["AI应用开发", "Flutter", "谷歌", "移动应用", "MCP"],
+      "status": "ingested"
+    }
+  ],
+  "stats": {
+    "total_videos": 1,
+    "total_chars": 5000,
+    "last_updated": "2026-04-26T20:41:07"
+  }
+}
