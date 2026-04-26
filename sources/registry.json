@@ -14,11 +14,25 @@
       "char_count": 5000,
       "tags": ["AI应用开发", "Flutter", "谷歌", "移动应用", "MCP"],
       "status": "ingested"
+    },
+    {
+      "bv": "BV1D9ojBzEAd",
+      "url": "https://www.bilibili.com/video/BV1D9ojBzEAd",
+      "title": "Deepset工程师-将小模型训练成特定领域大师",
+      "uploader": "Step Re (Deepset)",
+      "transcript_path": "E:\\bili2text\\.b2t\\transcripts\\original\\Deepset工程师-将小模型训练-成特定领域大师-20260427-chunked.txt",
+      "metadata_path": null,
+      "wiki_page": "wiki/videos/BV1D9ojBzEAd-将小模型训练成特定领域大师.md",
+      "ingested_at": "2026-04-27",
+      "transcribe_engine": "sensevoice",
+      "char_count": 8000,
+      "tags": ["强化学习", "语言模型训练", "RLVR", "GRPO", "Verifiers", "小模型"],
+      "status": "ingested"
     }
   ],
   "stats": {
-    "total_videos": 1,
-    "total_chars": 5000,
-    "last_updated": "2026-04-26T20:41:07"
+    "total_videos": 2,
+    "total_chars": 13000,
+    "last_updated": "2026-04-27"
   }
 }
