@@ -28,11 +28,39 @@
       "char_count": 8000,
       "tags": ["强化学习", "语言模型训练", "RLVR", "GRPO", "Verifiers", "小模型"],
       "status": "ingested"
+    },
+    {
+      "bv": "BV1SqDcBCEwW",
+      "url": "https://www.bilibili.com/video/BV1SqDcBCEwW",
+      "title": "关于一人公司，也就是OPC的一些业务思考",
+      "uploader": "云途的AI之路",
+      "transcript_path": "E:\\bili2text\\.b2t\\transcripts\\original\\关于一人公司-也就是OPC的一些业务思考-20260427-031204.txt",
+      "metadata_path": null,
+      "wiki_page": "wiki/videos/BV1SqDcBCEwW-关于一人公司也就是OPC的业务思考.md",
+      "ingested_at": "2026-04-27",
+      "transcribe_engine": "sensevoice",
+      "char_count": 3500,
+      "tags": ["一人公司", "MVP", "产品思维", "自媒体", "C端服务", "技术人创业"],
+      "status": "ingested"
+    },
+    {
+      "bv": "BV1Y4oLBuEu6",
+      "url": "https://www.bilibili.com/video/BV1Y4oLBuEu6",
+      "title": "吃透Claude Code核心源码-架构设计与工程细节全解析",
+      "uploader": "小韩",
+      "transcript_path": "E:\\bili2text\\.b2t\\transcripts\\original\\吃透-Claude-Code-核心源码-架构设计与工程细节全解析-20260427-chunked.txt",
+      "metadata_path": null,
+      "wiki_page": "wiki/videos/BV1Y4oLBuEu6-吃透Claude-Code核心源码.md",
+      "ingested_at": "2026-04-27",
+      "transcribe_engine": "sensevoice",
+      "char_count": 82000,
+      "tags": ["Claude Code", "Agent架构", "驾驭工程", "源码解析", "工具系统", "安全", "ReAct循环", "记忆管理", "Agent协作"],
+      "status": "ingested"
     }
   ],
   "stats": {
-    "total_videos": 2,
-    "total_chars": 13000,
+    "total_videos": 4,
+    "total_chars": 98500,
     "last_updated": "2026-04-27"
   }
 }
