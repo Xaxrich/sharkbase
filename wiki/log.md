@@ -4,6 +4,14 @@
 
 ## 2026-04-29
 
+### [tutorialize] 生成教学文章
+- **时间**: 2026-04-29
+- **变更**: 使用 Kimi API (moonshot-v1-auto) 通过 claude CLI 生成课程化教学文章
+- **生成文章** (4): BV1SqDcBCEwW、BV1GBPGzSE4u、BV1D9ojBzEAd、BV1Y4oLBuEu6
+- **输出目录**: `wiki/tutorials/`
+- **新增脚本**: `scripts/tutorialize.py` + `scripts/tutorialize_prompt.md`
+- **原理**: Kimi coding API 只允许 Coding Agent 访问，通过 claude CLI --print 模式设置 Kimi 的 Anthropic 兼容端点来调用
+
 ### [refactor] Wiki 深度重构
 - **时间**: 2026-04-29
 - **变更**: 模板重写 + 概念合并 + 主题重写 + 视频页加评注 + index.md 重建

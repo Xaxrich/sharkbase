@@ -20,6 +20,15 @@
 - [[MCP Server]] — AI工具互操作协议：动态加载、按需发现
 - [[Google AI零代码工具链]] — Google三件套的协作编排
 
+## 教学文章
+
+基于视频转录稿生成的课程化教学文章，可直接用于公众号、知识星球、课程讲义等。
+
+- [[tutorials/BV1SqDcBCEwW-关于一人公司，也就是OPC的一些业务思考]] — 一人公司运营与MVP思维实战
+- [[tutorials/BV1GBPGzSE4u-Antigravity-Flutter-Stitch打造惊艳移动应用]] — Google AI零代码工具链全流程
+- [[tutorials/BV1D9ojBzEAd-将小模型训练成特定领域大师]] — RLVR训练范式深度解析
+- [[tutorials/BV1Y4oLBuEu6-吃透Claude-Code核心源码]] — Claude Code架构与驾驭工程
+
 ## 按 UP 主索引
 
 - [[GoldenSpiderAI]] — 1 视频

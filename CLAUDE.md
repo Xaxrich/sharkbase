@@ -42,6 +42,24 @@
 
 也可以使用 `python scripts/ingest.py "BV号"` 来执行步骤 1-3 和 10 的自动化部分。
 
+### tutorialize — 生成教学文章
+
+将视频转录稿提交给 Kimi API，生成课程化的教学文章。输出保存在 `wiki/tutorials/` 目录。
+
+```
+python scripts/tutorialize.py BV1D9ojBzEAd           # 生成教学文章
+python scripts/tutorialize.py BV1D9ojBzEAd --force   # 覆盖已有文章
+```
+
+前提：视频必须已经 ingest（有转录文件和 registry 记录）。
+
+API 配置：
+- 端点：OpenAI 兼容 `https://api.kimi.com/coding/v1`
+- 模型：`moonshot-v1-auto`
+- API Key 硬编码在脚本中（也可通过 `KIMI_API_KEY` 环境变量覆盖）
+
+生成的文章不是视频摘要，而是课程化重构——有明确的问题意识、知识框架、方法步骤、案例解释和行动清单。可以直接用于公众号、知识星球、课程讲义等。
+
 ### query — 知识查询
 
 当用户提出问题时：
