@@ -61,6 +61,8 @@
   "stats": {
     "total_videos": 4,
     "total_chars": 98500,
-    "last_updated": "2026-04-27"
+    "total_concepts": 6,
+    "total_topics": 2,
+    "last_updated": "2026-04-29"
   }
 }

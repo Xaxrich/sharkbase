@@ -7,7 +7,7 @@ url: https://www.bilibili.com/video/BV1GBPGzSE4u
 date: 2026-04-26
 duration: 19:10
 tags: [AI应用开发, Flutter, 谷歌, 移动应用, MCP]
-concepts: [Google Stitch, Antigravity, Flutter, MCP Server]
+concepts: [Google AI零代码工具链, MCP Server]
 entities: [GoldenSpiderAI]
 topics: [AI驱动移动应用开发]
 transcript: .b2t/transcripts/original/Antigravity-Flutter-Stitch打造惊艳移动应用-新技能-20260426-204107.txt
@@ -59,11 +59,14 @@ transcript: .b2t/transcripts/original/Antigravity-Flutter-Stitch打造惊艳移�
 4. 替换占位图片：手动从参考网站下载真实图片，替换到项目文件
 5. 构建 APK：Antigravity 生成 APK 文件，可直接安装到手机
 
-## 关键引用
-> "You can now design a full mobile app with AI and actually install it on your phone without writing a single line of code."
+## 我的评注
+- **赞同**：MCP 作为工具互操作协议的思路是对的——AI 平台不应该内置所有能力，而应该通过标准协议按需获取。这是 [[驾驭工程]] 中"克制式设计"的另一种体现。
+- **质疑**：演示的是极简场景（活动页 App），和真正的复杂应用相距甚远。"零代码"的宣传有误导性——Stitch 生成的设计经常需要人工修改，Antigravity 生成的代码也需要调试。更准确的定位是"AI 辅助快速原型"而非"零代码开发"。
+- **关联**：MCP 的动态加载机制（工具按需发现而非预加载）在 [[驾驭工程]] 的 Claude Code 实现中被更深度地使用——同一个协议，从简单的工具桥接演进为 Agent 工具系统的核心架构。
+- **待深入**：MCP 协议的标准化进程如何？Anthropic 的 MCP 规范是否会成为行业通用标准？
 
 ## 与其他知识的关联
-- 相关概念：[[Google Stitch]]、[[Antigravity]]、[[Flutter]]、[[MCP Server]]
+- 相关概念：[[Google AI零代码工具链]]、[[MCP Server]]
 - 相关实体：[[GoldenSpiderAI]]
 - 相关主题：[[AI驱动移动应用开发]]
 

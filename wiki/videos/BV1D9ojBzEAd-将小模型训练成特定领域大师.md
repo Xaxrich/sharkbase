@@ -7,9 +7,9 @@ url: https://www.bilibili.com/video/BV1D9ojBzEAd
 date: 2026-04-27
 duration: 未知
 tags: [强化学习, 语言模型训练, RLVR, GRPO, Verifiers, 小模型]
-concepts: [强化学习与可验证奖励, GRPO, Verifiers库, 语言模型强化学习环境]
+concepts: [RLVR训练范式]
 entities: [Deepset]
-topics: [LLM强化学习训练]
+topics: [LLM-Agent工程实践, 技术人创业与产品思维]
 transcript: .b2t/transcripts/original/Deepset工程师-将小模型训练-成特定领域大师-20260427-chunked.txt
 ---
 
@@ -147,19 +147,16 @@ Verifiers是Trim Length团队开发的开源库，用于将RL环境构建为软�
 4. **实际评估**：不要只看程序化指标，用模型实际完成任务来评估
 5. **耐心训练**：开始时检查错误和稳定性，之后停止监控——RL需要时间，持续监控会让人过早终止
 
-## 关键引用
-> "In SFT, the model learns from curated examples and its completions tend to stay close to the distribution of those examples. In RLVR, the model explores different trajectories from its pretraining and learns to favor the ones that maximize rewards. The model is no longer limited by the quality of human examples — through trial and error, it can discover more efficient reasoning strategies."
-
-> "Pretraining no longer seems to be enough to keep improving model quality at the same rate. We need a new way to scale."
-
-> "If you can define a clear reward signal, you can build an environment and train a small specialized model to beat a large closed model on a specific task at a fraction of the cost."
-
-> "We did not just show the model how to play — we gave it a space to play and guided it through reward."
+## 我的评注
+- **赞同**：RLVR 的核心洞见"环境设计 > 数据质量"是颠覆性的。SFT 时代你花大钱标注数据，RLVR 时代你花心思设计环境——这让训练的成本结构和能力天花板都发生了根本变化。"We did not just show the model how to play — we gave it a space to play and guided it through reward" 这句话精确概括了范式转变。
+- **质疑**：井字棋太简单了——状态空间极小、胜负判定明确、对手策略有限。在复杂博弈（国际象棋、围棋）或更模糊的任务（写作、设计）上，"结果可自动验证"的前提就不再成立。不要把 RLVR 的成功过度推广。
+- **关联**：环境偏见问题（minimax 总是选第一个最优走法导致模型记忆对手）和产品思维中的认知陷阱是同构的——都是"在自己脑子里的假环境优化，而非真实环境中的探索"。详见 [[技术人创业与产品思维]]。
+- **待深入**：RLVR 在代码生成场景的效果如何？代码有测试用例可验证，是天然的 RLVR 候选领域。
 
 ## 与其他知识的关联
-- 相关概念：[[强化学习与可验证奖励]]、[[GRPO]]、[[Verifiers库]]、[[语言模型强化学习环境]]
+- 相关概念：[[RLVR训练范式]]
 - 相关实体：[[Deepset]]
-- 相关主题：[[LLM强化学习训练]]
+- 相关主题：[[LLM-Agent工程实践]]、[[技术人创业与产品思维]]
 
 ## 待深入问题
 - RLVR能否扩展到更复杂的博弈（如国际象棋、围棋）？计算成本如何？
