@@ -18,22 +18,22 @@ import tempfile
 import time
 from pathlib import Path
 
-# Kimi API 配置
-KIMI_API_BASE = "https://api.kimi.com/coding/"
-KIMI_API_KEY = os.environ.get("KIMI_API_KEY")
-if not KIMI_API_KEY:
-    raise RuntimeError("KIMI_API_KEY is required. Set it in environment variables or .env file.")
-KIMI_MODEL = "moonshot-v1-auto"
+# Add scripts/ to path for lib import
+sys.path.insert(0, str(Path(__file__).parent))
+from lib.config import get_path, get_value, kimi_api_key, project_root
 
-# Claude CLI 路径
-CLAUDE_CLI = r"C:\Users\11377\AppData\Roaming\npm\claude.cmd"
+# Paths from config
+KIMI_API_BASE = get_value("models.kimi_api_base", "https://api.kimi.com/coding/")
+KIMI_MODEL = get_value("models.kimi_model", "moonshot-v1-auto")
+CLAUDE_CLI = str(get_path("workspace.claude_cli", "claude"))
+KIMI_TIMEOUT = int(get_value("pipeline.kimi_timeout", "600"))
 
-# 路径
-WIKI_ROOT = Path(r"E:\bili\wiki")
+WIKI_ROOT = project_root() / "wiki"
 TUTORIALS_DIR = WIKI_ROOT / "tutorials"
-REGISTRY_PATH = Path(r"E:\bili\sources\registry.json")
+REGISTRY_PATH = project_root() / "sources" / "registry.json"
 
-PROMPT_FILE = Path(__file__).parent / "tutorialize_prompt.md"
+# Prompt from assets/prompts/ (the authoritative source)
+PROMPT_FILE = project_root() / "assets" / "prompts" / "tutorialize_prompt.md"
 
 
 def load_registry():
@@ -60,41 +60,31 @@ def find_video_info(bv: str) -> dict:
     return {"bv": bv, "title": bv}
 
 
-def call_kimi_via_claude_cli(transcript: str) -> str:
+def call_kimi_via_claude_cli(prompt_text: str) -> str:
     """Call Kimi API through claude CLI (which is a recognized Coding Agent)."""
-    prompt_text = PROMPT_FILE.read_text(encoding="utf-8") if PROMPT_FILE.exists() else ""
-    full_prompt = prompt_text.replace("{transcript}", transcript) if "{transcript}" in prompt_text else prompt_text + "\n\n" + transcript
+    api_key = kimi_api_key()  # Only checks at call time, not import time
 
-    # Write prompt to temp file to avoid shell escaping issues
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False, encoding="utf-8") as f:
-        f.write(full_prompt)
-        prompt_path = f.name
+    env = os.environ.copy()
+    env["ANTHROPIC_BASE_URL"] = KIMI_API_BASE
+    env["ANTHROPIC_API_KEY"] = api_key
+    env["ANTHROPIC_MODEL"] = KIMI_MODEL
+    env["CLAUDE_CODE_DISABLE_THINKING"] = "1"
+    env["DISABLE_INTERLEAVED_THINKING"] = "1"
+    env["CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS"] = "1"
 
-    try:
-        env = os.environ.copy()
-        env["ANTHROPIC_BASE_URL"] = KIMI_API_BASE
-        env["ANTHROPIC_API_KEY"] = KIMI_API_KEY
-        env["ANTHROPIC_MODEL"] = KIMI_MODEL
-        env["CLAUDE_CODE_DISABLE_THINKING"] = "1"
-        env["DISABLE_INTERLEAVED_THINKING"] = "1"
-        env["CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS"] = "1"
+    result = subprocess.run(
+        [CLAUDE_CLI, "--print"],
+        input=prompt_text.encode("utf-8"),
+        capture_output=True,
+        env=env,
+        timeout=KIMI_TIMEOUT,
+    )
 
-        # Pipe prompt via stdin to avoid shell argument length limits
-        result = subprocess.run(
-            [CLAUDE_CLI, "--print"],
-            input=full_prompt.encode("utf-8"),
-            capture_output=True,
-            env=env,
-            timeout=600,
-        )
+    if result.returncode != 0:
+        stderr_text = result.stderr.decode("utf-8", errors="replace")[:500] if result.stderr else "unknown"
+        raise RuntimeError(f"claude CLI failed (exit {result.returncode}): {stderr_text}")
 
-        if result.returncode != 0:
-            stderr_text = result.stderr.decode("utf-8", errors="replace")[:500] if result.stderr else "unknown"
-            raise RuntimeError(f"claude CLI failed (exit {result.returncode}): {stderr_text}")
-
-        return result.stdout.decode("utf-8", errors="replace").strip()
-    finally:
-        os.unlink(prompt_path)
+    return result.stdout.decode("utf-8", errors="replace").strip()
 
 
 def tutorialize(bv: str, force: bool = False):
@@ -120,9 +110,16 @@ def tutorialize(bv: str, force: bool = False):
         print(f"  Already exists: {output_path.name} (use --force to overwrite)")
         return True
 
+    # Build prompt
+    prompt_text = PROMPT_FILE.read_text(encoding="utf-8") if PROMPT_FILE.exists() else ""
+    if "{transcript}" in prompt_text:
+        full_prompt = prompt_text.replace("{transcript}", transcript)
+    else:
+        full_prompt = prompt_text + "\n\n" + transcript
+
     print(f"[2/3] Generating tutorial: {title} ({len(transcript)} chars)", flush=True)
     t0 = time.time()
-    article = call_kimi_via_claude_cli(transcript)
+    article = call_kimi_via_claude_cli(full_prompt)
     elapsed = time.time() - t0
     print(f"  Done in {elapsed:.0f}s, article: {len(article)} chars", flush=True)
 
