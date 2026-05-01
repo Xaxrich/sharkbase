@@ -1,0 +1,446 @@
+{
+  "A": [
+    {
+      "bv": "BV1phndzwEs7",
+      "title": "如何用AI做出高颜值的原型设计？",
+      "duration_min": 44,
+      "index": 1
+    },
+    {
+      "bv": "BV15UndzSE6x",
+      "title": "Claude Code + Obsidian：打造第二大脑",
+      "duration_min": 71,
+      "index": 6
+    },
+    {
+      "bv": "BV1Ru4QzHEZR",
+      "title": "Chat PRD: 产品经理是这么用AI的",
+      "duration_min": 66,
+      "index": 10
+    },
+    {
+      "bv": "BV1LfmHBuEzt",
+      "title": "Claude Skill实战：创建一个AI团队",
+      "duration_min": 33,
+      "index": 18
+    },
+    {
+      "bv": "BV19tqjBZEWD",
+      "title": "Vibe Coding实战：40 分钟从原型到真正的 SaaS 应用",
+      "duration_min": 39,
+      "index": 20
+    },
+    {
+      "bv": "BV1UZqLBJEH1",
+      "title": "Curosr主管演示：50分钟从新手到精通Cursor",
+      "duration_min": 50,
+      "index": 23
+    },
+    {
+      "bv": "BV1VUqLBxEWg",
+      "title": "NotebookLM：30分钟实战，AI时代的知识管理利器",
+      "duration_min": 30,
+      "index": 24
+    },
+    {
+      "bv": "BV1gXqLBXE87",
+      "title": "AI评估实战：50分钟，AI评估完整入门课程",
+      "duration_min": 51,
+      "index": 25
+    },
+    {
+      "bv": "BV1zvBgBXE5E",
+      "title": "AI评估实战：50分钟，AI评估大师课",
+      "duration_min": 52,
+      "index": 29
+    },
+    {
+      "bv": "BV1FgveB7Ebx",
+      "title": "Claude Code实战：如何将个人产出提高15倍",
+      "duration_min": 53,
+      "index": 34
+    },
+    {
+      "bv": "BV1f3veB1EE5",
+      "title": "我如何将应用程序设计得好10倍（免费课程）",
+      "duration_min": 47,
+      "index": 36
+    },
+    {
+      "bv": "BV1AwveBXEBE",
+      "title": "Claude 4.5 vs Gemini 3 Pro：测评",
+      "duration_min": 59,
+      "index": 37
+    },
+    {
+      "bv": "BV1ptrMBhE2X",
+      "title": "从零开始构建一个百万美元SaaS的蓝图",
+      "duration_min": 61,
+      "index": 40
+    },
+    {
+      "bv": "BV1xHrMBvEYT",
+      "title": "Claude Code 实战：如何成为一名10倍效率的vibe coder？",
+      "duration_min": 33,
+      "index": 41
+    },
+    {
+      "bv": "BV1VczqBREQ8",
+      "title": "亚马逊Kiro团队：规范驱动开发",
+      "duration_min": 63,
+      "index": 43
+    },
+    {
+      "bv": "BV1GAzqBWEWx",
+      "title": "AI产品经理：如何用AI做原型设计、战略和个人OS",
+      "duration_min": 51,
+      "index": 45
+    },
+    {
+      "bv": "BV1xEzqBVEeb",
+      "title": "Claude Cowork : Claude Cowork 是我们所有人的 Claude Code",
+      "duration_min": 92,
+      "index": 46
+    },
+    {
+      "bv": "BV19uzXBeEMp",
+      "title": "Claude Code之父：亲自讲解 Claude Cowork",
+      "duration_min": 42,
+      "index": 47
+    },
+    {
+      "bv": "BV19MzXBNESV",
+      "title": "OpenAI官方：Codex新手教程",
+      "duration_min": 53,
+      "index": 48
+    },
+    {
+      "bv": "BV1kAFCzgEq5",
+      "title": "MCP开发：你的MCP服务很糟糕..最佳实践！",
+      "duration_min": 54,
+      "index": 51
+    },
+    {
+      "bv": "BV15jFCzhEXv",
+      "title": "Tiny创始人：工作和生活中 如何使用 Opus 4.5",
+      "duration_min": 62,
+      "index": 52
+    },
+    {
+      "bv": "BV1hkFkz9E6N",
+      "title": "Claude：如何让AI 直接做待办事项",
+      "duration_min": 45,
+      "index": 53
+    },
+    {
+      "bv": "BV1QeZ2BZEFZ",
+      "title": "Claude Code实战：复合工程，让AI越用越懂你",
+      "duration_min": 53,
+      "index": 56
+    },
+    {
+      "bv": "BV1Sef8BmEU3",
+      "title": "Vide Code实战：8小时马拉松！顶级AI开发者现场演示",
+      "duration_min": 464,
+      "index": 58
+    },
+    {
+      "bv": "BV1NscRzUEia",
+      "title": "OpenClaw实战：养虾指南！ 打造你的数字员工",
+      "duration_min": 40,
+      "index": 59
+    },
+    {
+      "bv": "BV1mncRznEd6",
+      "title": "Ghostty创始人：我现在如何用AI写代码？",
+      "duration_min": 118,
+      "index": 60
+    },
+    {
+      "bv": "BV1VFczzSEsn",
+      "title": "OpenClaw实战：21个绝佳使用案例",
+      "duration_min": 33,
+      "index": 61
+    },
+    {
+      "bv": "BV1aRwKzoEMU",
+      "title": "OpenClaw实战：Tiktok自动运营！完整工作流",
+      "duration_min": 43,
+      "index": 62
+    },
+    {
+      "bv": "BV1D1w3zMEur",
+      "title": "Intuition CEO：AI革命不是软件 是农场、矿山和卡车",
+      "duration_min": 84,
+      "index": 63
+    },
+    {
+      "bv": "BV1jFAHzCEMw",
+      "title": "GPT 5.4测评：OpenAI 王者归来",
+      "duration_min": 78,
+      "index": 64
+    },
+    {
+      "bv": "BV1ohDzBwEJN",
+      "title": "Claude设计主管：Cowork揭秘，40分钟教程",
+      "duration_min": 40,
+      "index": 66
+    },
+    {
+      "bv": "BV1HwdjBHENb",
+      "title": "Claude Code实战：鲜为人知的 Claude Code 工作流",
+      "duration_min": 35,
+      "index": 68
+    },
+    {
+      "bv": "BV1q1dWBNEVv",
+      "title": "Figma CEO：如何让AI 设计更有品味？",
+      "duration_min": 40,
+      "index": 69
+    },
+    {
+      "bv": "BV1H59yBFECR",
+      "title": "大神Geoff：Ralph Loops的 基础设施",
+      "duration_min": 77,
+      "index": 73
+    }
+  ],
+  "B": [
+    {
+      "bv": "BV14HndzMEZ1",
+      "title": "Claude Code + Figma：Claude的设计主管这么用的",
+      "duration_min": 39,
+      "index": 2
+    },
+    {
+      "bv": "BV15mndznEkS",
+      "title": "Claude Code最佳实践：20条使用建议",
+      "duration_min": 35,
+      "index": 3
+    },
+    {
+      "bv": "BV1G9ndzjEtc",
+      "title": "Claude Code实战教程：15分钟开发一个电影APP",
+      "duration_min": 16,
+      "index": 4
+    },
+    {
+      "bv": "BV1Q9ndzjEer",
+      "title": "Claude Code实战：15分钟开发Youtube Research Agent",
+      "duration_min": 15,
+      "index": 5
+    },
+    {
+      "bv": "BV1hRndz1E4v",
+      "title": "用Claude Code搭建Life OS",
+      "duration_min": 25,
+      "index": 7
+    },
+    {
+      "bv": "BV1bJndzzELm",
+      "title": "Anthropic官方教程：30分钟掌握Claude Code",
+      "duration_min": 28,
+      "index": 8
+    },
+    {
+      "bv": "BV1ZvSqBoEoa",
+      "title": "6个创建Agent平台测评，哪个最好用？",
+      "duration_min": 30,
+      "index": 11
+    },
+    {
+      "bv": "BV1pwS1BpEDU",
+      "title": "OpenAI研究员：AI评估，从前沿研究到生产应用",
+      "duration_min": 21,
+      "index": 16
+    },
+    {
+      "bv": "BV15xqjBcE17",
+      "title": "Sphinx CEO：数据科学领域的Data Agent",
+      "duration_min": 28,
+      "index": 19
+    },
+    {
+      "bv": "BV1udqLBDEgM",
+      "title": "Agent平台n8n实践：26分钟构建你的第一个AI智能体（无代码）",
+      "duration_min": 26,
+      "index": 21
+    },
+    {
+      "bv": "BV1DRqLBHEAs",
+      "title": "Cursor VP现场演示：让Cursor像10 名开发者一样工作",
+      "duration_min": 29,
+      "index": 22
+    },
+    {
+      "bv": "BV1PMqjBkEPJ",
+      "title": "Chatgpt功能详解：37 分钟了解所有 ChatGPT 功能",
+      "duration_min": 36,
+      "index": 26
+    },
+    {
+      "bv": "BV1c2BTBUEMK",
+      "title": "IOS开发：现场演示如何开发一个月入10w美元的APP",
+      "duration_min": 32,
+      "index": 27
+    },
+    {
+      "bv": "BV1irBgBUEAe",
+      "title": "Vide Coding实践：101款你可以Vibe Code的AI应用",
+      "duration_min": 28,
+      "index": 28
+    },
+    {
+      "bv": "BV1ZqBgBHEfM",
+      "title": "“没有AI我无法完成工作”：这位产品经理如何将Claude + ChatGPT作为他的第二大脑",
+      "duration_min": 38,
+      "index": 30
+    },
+    {
+      "bv": "BV1bQvYB8EMH",
+      "title": "AI原型设计：用AI进行原型设计的正确方法",
+      "duration_min": 38,
+      "index": 32
+    },
+    {
+      "bv": "BV1TRvYBtEfD",
+      "title": "创作点子：快来抄作业！10款月收入超过5万美元的未知应用",
+      "duration_min": 33,
+      "index": 33
+    },
+    {
+      "bv": "BV1cMveBUEc1",
+      "title": "我作为设计师测试了 Gemini 3。它好得令人恐惧。",
+      "duration_min": 28,
+      "index": 35
+    },
+    {
+      "bv": "BV162rNBDE26",
+      "title": "Nano Banana教程：15分钟内创建与您的品牌相符的精美信息图表",
+      "duration_min": 15,
+      "index": 39
+    },
+    {
+      "bv": "BV1X2rQBTE9p",
+      "title": "上下文工程现状：Agentic RAG、上下文腐烂、MCP、SubAgent",
+      "duration_min": 26,
+      "index": 42
+    },
+    {
+      "bv": "BV1aPzqBXETc",
+      "title": "如何开发Agent-Native的App？",
+      "duration_min": 22,
+      "index": 44
+    },
+    {
+      "bv": "BV1G3zXBPEUk",
+      "title": "ClawdBot：席卷硅谷! 最新AI工具",
+      "duration_min": 27,
+      "index": 49
+    },
+    {
+      "bv": "BV1paf9BTEBk",
+      "title": "OpenClaw：现场演示如何使用",
+      "duration_min": 35,
+      "index": 50
+    },
+    {
+      "bv": "BV1WnctziEac",
+      "title": "OpenClaw 创始人：我是如何使用OpenClaw的？",
+      "duration_min": 37,
+      "index": 54
+    },
+    {
+      "bv": "BV1kWctzeEYK",
+      "title": "30分钟精通OpenClaw（5个真实用例+设置+内存）",
+      "duration_min": 28,
+      "index": 55
+    },
+    {
+      "bv": "BV1Lsf8BREhA",
+      "title": "使用AI的5个等级，你在哪一级？",
+      "duration_min": 22,
+      "index": 57
+    },
+    {
+      "bv": "BV1FNDbBgEkn",
+      "title": "AI创业思路：23 个让我彻夜 难眠的AI趋势",
+      "duration_min": 31,
+      "index": 67
+    },
+    {
+      "bv": "BV1WhoEBPEau",
+      "title": "OpenAI官方：重磅！GPT Image2.0现场演示",
+      "duration_min": 21,
+      "index": 70
+    },
+    {
+      "bv": "BV1nyo1BuEd9",
+      "title": "Hermes Agent：深入体验，新的OpenClaw？",
+      "duration_min": 37,
+      "index": 71
+    }
+  ],
+  "C": [
+    {
+      "bv": "BV1hQnhzrEUF",
+      "title": "A16Z合伙人：我的10大AI生产力工具",
+      "duration_min": 9,
+      "index": 9
+    },
+    {
+      "bv": "BV14qSiBqENz",
+      "title": "2026 年最佳 Vibe 编程工具是哪个？",
+      "duration_min": 25,
+      "index": 12
+    },
+    {
+      "bv": "BV1s6SiBvEiP",
+      "title": "试用了22款AI工具，这7个最推荐",
+      "duration_min": 27,
+      "index": 13
+    },
+    {
+      "bv": "BV1tiSiBTENJ",
+      "title": "持续学习：AI领域近期最大的进展",
+      "duration_min": 12,
+      "index": 14
+    },
+    {
+      "bv": "BV1teSiBzEbW",
+      "title": "AI浏览器深度测评：真有用还是抄作？",
+      "duration_min": 18,
+      "index": 15
+    },
+    {
+      "bv": "BV15FmpBBERt",
+      "title": "Codex: 如何写出漂亮的前端",
+      "duration_min": 8,
+      "index": 17
+    },
+    {
+      "bv": "BV1sfvYBREQm",
+      "title": "Replit+Gemini 3: 在 12 分钟内构建 10 个精美网站",
+      "duration_min": 12,
+      "index": 31
+    },
+    {
+      "bv": "BV1ewrKB6EFJ",
+      "title": "Nano Banana Pro: 被忽略的10个细节",
+      "duration_min": 14,
+      "index": 38
+    },
+    {
+      "bv": "BV1gE93BEEUq",
+      "title": "AI设计实战：现场演示6个AI，共同设计一款App",
+      "duration_min": 14,
+      "index": 65
+    },
+    {
+      "bv": "BV1W39yBwEhp",
+      "title": "大神Jeff：Agent.md的历史\\与最佳实践",
+      "duration_min": 22,
+      "index": 72
+    }
+  ]
+}

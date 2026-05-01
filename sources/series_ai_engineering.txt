@@ -1,0 +1,77 @@
+# AI工具实践
+# Series ID: 6534653
+# UP: Easonlee的AI笔记
+
+1. BV1phndzwEs7	44min	如何用AI做出高颜值的原型设计？
+2. BV14HndzMEZ1	39min	Claude Code + Figma：Claude的设计主管这么用的
+3. BV15mndznEkS	35min	Claude Code最佳实践：20条使用建议
+4. BV1G9ndzjEtc	16min	Claude Code实战教程：15分钟开发一个电影APP
+5. BV1Q9ndzjEer	15min	Claude Code实战：15分钟开发Youtube Research Agent
+6. BV15UndzSE6x	71min	Claude Code + Obsidian：打造第二大脑
+7. BV1hRndz1E4v	25min	用Claude Code搭建Life OS
+8. BV1bJndzzELm	28min	Anthropic官方教程：30分钟掌握Claude Code
+9. BV1hQnhzrEUF	9min	A16Z合伙人：我的10大AI生产力工具
+10. BV1Ru4QzHEZR	66min	Chat PRD: 产品经理是这么用AI的
+11. BV1ZvSqBoEoa	30min	6个创建Agent平台测评，哪个最好用？
+12. BV14qSiBqENz	25min	2026 年最佳 Vibe 编程工具是哪个？
+13. BV1s6SiBvEiP	27min	试用了22款AI工具，这7个最推荐
+14. BV1tiSiBTENJ	12min	持续学习：AI领域近期最大的进展
+15. BV1teSiBzEbW	18min	AI浏览器深度测评：真有用还是抄作？
+16. BV1pwS1BpEDU	21min	OpenAI研究员：AI评估，从前沿研究到生产应用
+17. BV15FmpBBERt	8min	Codex: 如何写出漂亮的前端
+18. BV1LfmHBuEzt	33min	Claude Skill实战：创建一个AI团队
+19. BV15xqjBcE17	28min	Sphinx CEO：数据科学领域的Data Agent
+20. BV19tqjBZEWD	39min	Vibe Coding实战：40 分钟从原型到真正的 SaaS 应用
+21. BV1udqLBDEgM	26min	Agent平台n8n实践：26分钟构建你的第一个AI智能体（无代码）
+22. BV1DRqLBHEAs	29min	Cursor VP现场演示：让Cursor像10 名开发者一样工作
+23. BV1UZqLBJEH1	50min	Curosr主管演示：50分钟从新手到精通Cursor
+24. BV1VUqLBxEWg	30min	NotebookLM：30分钟实战，AI时代的知识管理利器
+25. BV1gXqLBXE87	51min	AI评估实战：50分钟，AI评估完整入门课程
+26. BV1PMqjBkEPJ	36min	Chatgpt功能详解：37 分钟了解所有 ChatGPT 功能
+27. BV1c2BTBUEMK	32min	IOS开发：现场演示如何开发一个月入10w美元的APP
+28. BV1irBgBUEAe	28min	Vide Coding实践：101款你可以Vibe Code的AI应用
+29. BV1zvBgBXE5E	52min	AI评估实战：50分钟，AI评估大师课
+30. BV1ZqBgBHEfM	38min	“没有AI我无法完成工作”：这位产品经理如何将Claude + ChatGPT作为他的第二大脑
+31. BV1sfvYBREQm	12min	Replit+Gemini 3: 在 12 分钟内构建 10 个精美网站
+32. BV1bQvYB8EMH	38min	AI原型设计：用AI进行原型设计的正确方法
+33. BV1TRvYBtEfD	33min	创作点子：快来抄作业！10款月收入超过5万美元的未知应用
+34. BV1FgveB7Ebx	53min	Claude Code实战：如何将个人产出提高15倍
+35. BV1cMveBUEc1	28min	我作为设计师测试了 Gemini 3。它好得令人恐惧。
+36. BV1f3veB1EE5	47min	我如何将应用程序设计得好10倍（免费课程）
+37. BV1AwveBXEBE	59min	Claude 4.5 vs Gemini 3 Pro：测评
+38. BV1ewrKB6EFJ	14min	Nano Banana Pro: 被忽略的10个细节
+39. BV162rNBDE26	15min	Nano Banana教程：15分钟内创建与您的品牌相符的精美信息图表
+40. BV1ptrMBhE2X	61min	从零开始构建一个百万美元SaaS的蓝图
+41. BV1xHrMBvEYT	33min	Claude Code 实战：如何成为一名10倍效率的vibe coder？
+42. BV1X2rQBTE9p	26min	上下文工程现状：Agentic RAG、上下文腐烂、MCP、SubAgent
+43. BV1VczqBREQ8	63min	亚马逊Kiro团队：规范驱动开发
+44. BV1aPzqBXETc	22min	如何开发Agent-Native的App？
+45. BV1GAzqBWEWx	51min	AI产品经理：如何用AI做原型设计、战略和个人OS
+46. BV1xEzqBVEeb	92min	Claude Cowork : Claude Cowork 是我们所有人的 Claude Code
+47. BV19uzXBeEMp	42min	Claude Code之父：亲自讲解 Claude Cowork
+48. BV19MzXBNESV	53min	OpenAI官方：Codex新手教程
+49. BV1G3zXBPEUk	27min	ClawdBot：席卷硅谷! 最新AI工具
+50. BV1paf9BTEBk	35min	OpenClaw：现场演示如何使用
+51. BV1kAFCzgEq5	54min	MCP开发：你的MCP服务很糟糕..最佳实践！
+52. BV15jFCzhEXv	62min	Tiny创始人：工作和生活中 如何使用 Opus 4.5
+53. BV1hkFkz9E6N	45min	Claude：如何让AI 直接做待办事项
+54. BV1WnctziEac	37min	OpenClaw 创始人：我是如何使用OpenClaw的？
+55. BV1kWctzeEYK	28min	30分钟精通OpenClaw（5个真实用例+设置+内存）
+56. BV1QeZ2BZEFZ	53min	Claude Code实战：复合工程，让AI越用越懂你
+57. BV1Lsf8BREhA	22min	使用AI的5个等级，你在哪一级？
+58. BV1Sef8BmEU3	464min	Vide Code实战：8小时马拉松！顶级AI开发者现场演示
+59. BV1NscRzUEia	40min	OpenClaw实战：养虾指南！ 打造你的数字员工
+60. BV1mncRznEd6	118min	Ghostty创始人：我现在如何用AI写代码？
+61. BV1VFczzSEsn	33min	OpenClaw实战：21个绝佳使用案例
+62. BV1aRwKzoEMU	43min	OpenClaw实战：Tiktok自动运营！完整工作流
+63. BV1D1w3zMEur	84min	Intuition CEO：AI革命不是软件 是农场、矿山和卡车
+64. BV1jFAHzCEMw	78min	GPT 5.4测评：OpenAI 王者归来
+65. BV1gE93BEEUq	14min	AI设计实战：现场演示6个AI，共同设计一款App
+66. BV1ohDzBwEJN	40min	Claude设计主管：Cowork揭秘，40分钟教程
+67. BV1FNDbBgEkn	31min	AI创业思路：23 个让我彻夜 难眠的AI趋势
+68. BV1HwdjBHENb	35min	Claude Code实战：鲜为人知的 Claude Code 工作流
+69. BV1q1dWBNEVv	40min	Figma CEO：如何让AI 设计更有品味？
+70. BV1WhoEBPEau	21min	OpenAI官方：重磅！GPT Image2.0现场演示
+71. BV1nyo1BuEd9	37min	Hermes Agent：深入体验，新的OpenClaw？
+72. BV1W39yBwEhp	22min	大神Jeff：Agent.md的历史\与最佳实践
+73. BV1H59yBFECR	77min	大神Geoff：Ralph Loops的 基础设施

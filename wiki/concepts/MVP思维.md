@@ -28,6 +28,7 @@ MVP 思维的深层逻辑是：**人类对"什么有用"的预测能力远低于
 ## 来源
 - [[BV1SqDcBCEwW-关于一人公司也就是OPC的业务思考]] — 核心论点视频，UP主用自身从"拿不出手"到首月变现1.2万的经历论证 MVP 思维
 - [[BV1Y4oLBuEu6-吃透Claude-Code核心源码]] — Claude Code 的克制式设计哲学为 MVP 思维提供了跨领域的工程案例
+- [[BV1VUqLBxEWg-NotebookLM实战AI时代知识管理利器]] — MVP 思维在 AI 辅助产品开发中的实践：从多源研究中提炼最小核心功能（"只保留最竞争力的功能"），用 NotebookLM + Firebase Studio 链路快速从研究跳到可用原型
 
 ### 关键案例
 
