@@ -111,9 +111,7 @@ def transcribe(source: str, provider: str, model: str | None = None) -> subproce
     uv = find_uv()
     cmd = [uv, "run", "bili2text", "tx", source, "--provider", provider]
     effective_model = model or DEFAULT_MODEL
-    if effective_model:
-        cmd.extend(["--model", effective_model])
-        cmd.extend(["--model", model])
+    cmd.extend(["--model", str(effective_model)])
 
     print(f"[ingest] Running: {' '.join(cmd)}")
     print(f"[ingest] Working directory: {B2T_DIR}")

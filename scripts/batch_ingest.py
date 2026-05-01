@@ -39,7 +39,9 @@ CHUNK_DIR = B2T_DIR / ".b2t" / "audio" / "chunks"
 CHUNK_DURATION = 300  # 5 minutes per chunk
 CLAUDE_CLI = Path(r"C:\Users\11377\AppData\Roaming\npm\claude.cmd")
 KIMI_API_BASE = "https://api.kimi.com/coding/"
-KIMI_API_KEY = os.environ.get("KIMI_API_KEY", "sk-kimi-chOdpjpAMqJtl4zdcEpSz48acdAePCgxgUUgFtmAQhEn4GJoPxR5ESw2QgQOaxnJ")
+KIMI_API_KEY = os.environ.get("KIMI_API_KEY")
+if not KIMI_API_KEY:
+    raise RuntimeError("KIMI_API_KEY is required. Set it in environment variables or .env file.")
 KIMI_MODEL = "moonshot-v1-auto"
 
 

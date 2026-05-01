@@ -1,6 +1,6 @@
 # 知识目录
 
-> 最后更新: 2026-04-30 | 视频总数: 40 | 概念数: 50 | 主题数: 3
+> 最后更新: 2026-05-01 | 视频总数: 75 | 概念数: 50 | 主题数: 3 | 教程数: 63
 
 ## AI工程
 
@@ -75,12 +75,82 @@
 - [[tutorials/BV1D9ojBzEAd-将小模型训练成特定领域大师]] — RLVR训练范式深度解析
 - [[tutorials/BV1Y4oLBuEu6-吃透Claude-Code核心源码]] — Claude Code架构与驾驭工程
 
+<details>
+<summary>AI工具实践系列教程 (63篇)</summary>
+
+- [[tutorials/BV1phndzwEs7-如何用AI做出高颜值的原型设计？]] — AI原型设计实战
+- [[tutorials/BV14HndzMEZ1-Claude-Code---Figma-Claude的设计主管这么用的]] — Claude Code + Figma 设计工作流
+- [[tutorials/BV15mndznEkS-Claude-Code最佳实践-20条使用建议]] — Claude Code 最佳实践
+- [[tutorials/BV1G9ndzjEtc-Claude-Code实战教程-15分钟开发一个电影APP]] — Claude Code 快速开发
+- [[tutorials/BV1Q9ndzjEer-Claude-Code实战-15分钟开发Youtube-Research-Agent]] — Agent 开发实战
+- [[tutorials/BV15UndzSE6x-Claude Code - Obsidian-打造第二大脑]] — 第二大脑构建
+- [[tutorials/BV1hRndz1E4v-用Claude-Code搭建Life-OS]] — 个人操作系统
+- [[tutorials/BV1bJndzzELm-Anthropic官方教程-30分钟掌握Claude-Code]] — 官方教程
+- [[tutorials/BV1ZvSqBoEoa-6个创建Agent平台测评-哪个最好用-]] — Agent 平台测评
+- [[tutorials/BV1Ru4QzHEZR-Chat PRD- 产品经理是这么用AI的]] — 产品经理与AI
+- [[tutorials/BV1pwS1BpEDU-OpenAI研究员-AI评估-从前沿研究到生产应用]] — AI 评估前沿
+- [[tutorials/BV15xqjBcE17-Sphinx-CEO-数据科学领域的Data-Agent]] — Data Agent
+- [[tutorials/BV1LfmHBuEzt-Claude Skill实战-创建一个AI团队]] — Skill 实战
+- [[tutorials/BV19tqjBZEWD-Vibe Coding实战：40 分钟从原型到真正的 SaaS 应用]] — Vibe Coding SaaS
+- [[tutorials/BV1udqLBDEgM-Agent平台n8n实践-26分钟构建你的第一个AI智能体（无代码）]] — n8n 无代码 Agent
+- [[tutorials/BV1DRqLBHEAs-Cursor-VP现场演示-让Cursor像10-名开发者一样工作]] — Cursor 高效使用
+- [[tutorials/BV1UZqLBJEH1-Curosr主管演示-50分钟从新手到精通Cursor]] — Cursor 入门精通
+- [[tutorials/BV1VUqLBxEWg-NotebookLM-30分钟实战，AI时代的知识管理利器]] — NotebookLM 知识管理
+- [[tutorials/BV1gXqLBXE87-AI评估实战：50分钟，AI评估完整入门课程]] — AI 评估入门
+- [[tutorials/BV1irBgBUEAe-Vide-Coding实践-101款你可以Vibe-Code的AI应用]] — Vibe Coding 101 应用
+- [[tutorials/BV1zvBgBXE5E-AI评估实战：50分钟，AI评估大师课]] — AI 评估大师课
+- [[tutorials/BV1ZqBgBHEfM--没有AI我无法完成工作-这位产品经理如何将Claude---ChatGPT作为他的第二大脑]] — AI 第二大脑
+- [[tutorials/BV1bQvYB8EMH-AI原型设计-用AI进行原型设计的正确方法]] — AI 原型设计方法
+- [[tutorials/BV1TRvYBtEfD-创作点子-快来抄作业！10款月收入超过5万美元的未知应用]] — 创业点子
+- [[tutorials/BV1FgveB7Ebx-Claude Code实战：如何将个人产出提高15倍]] — Claude Code 15倍效率
+- [[tutorials/BV1cMveBUEc1-我作为设计师测试了-Gemini-3-它好得令人恐惧-]] — Gemini 3 设计测试
+- [[tutorials/BV1f3veB1EE5-我如何将应用程序设计得好10倍（免费课程）]] — 应用设计十倍提升
+- [[tutorials/BV1AwveBXEBE-Claude 4.5 vs Gemini 3 Pro：测评]] — 模型测评
+- [[tutorials/BV162rNBDE26-Nano-Banana教程-15分钟内创建与您的品牌相符的精美信息图表]] — Nano Banana 信息图表
+- [[tutorials/BV1ptrMBhE2X-从零开始构建一个百万美元SaaS的蓝图]] — SaaS 蓝图
+- [[tutorials/BV1xHrMBvEYT-Claude Code 实战：如何成为一名10倍效率的vibe coder？]] — Vibe Coder 效率
+- [[tutorials/BV1VczqBREQ8-亚马逊Kiro团队：规范驱动开发]] — 规范驱动开发
+- [[tutorials/BV1aPzqBXETc-如何开发Agent-Native的App？]] — Agent-Native 开发
+- [[tutorials/BV1GAzqBWEWx-AI产品经理-如何用AI做原型设计-战略和个人OS]] — AI 产品经理
+- [[tutorials/BV1xEzqBVEeb-Claude-Cowork---Claude-Cowork-是我们所有人的-Claude-Code]] — Claude Cowork
+- [[tutorials/BV19uzXBeEMp-Claude-Code之父-亲自讲解-Claude-Cowork]] — Claude Code 之父
+- [[tutorials/BV1kAFCzgEq5-MCP开发-你的MCP服务很糟糕..最佳实践！]] — MCP 最佳实践
+- [[tutorials/BV15jFCzhEXv-Tiny创始人-工作和生活中-如何使用-Opus-4.5]] — Opus 4.5 使用
+- [[tutorials/BV1hkFkz9E6N-Claude-如何让AI-直接做待办事项]] — AI 待办事项
+- [[tutorials/BV1WnctziEac-OpenClaw-创始人-我是如何使用OpenClaw的-]] — OpenClaw 使用
+- [[tutorials/BV1kWctzeEYK-30分钟精通OpenClaw（5个真实用例+设置+内存）]] — OpenClaw 精通
+- [[tutorials/BV1QeZ2BZEFZ-Claude-Code实战-复合工程-让AI越用越懂你]] — 复合工程
+- [[tutorials/BV1Lsf8BREhA-使用AI的5个等级-你在哪一级-]] — AI 使用等级
+- [[tutorials/BV1Sef8BmEU3-Vide-Code实战-8小时马拉松！顶级AI开发者现场演示]] — Vibe Code 马拉松
+- [[tutorials/BV1NscRzUEia-OpenClaw实战-养虾指南！-打造你的数字员工]] — OpenClaw 数字员工
+- [[tutorials/BV1mncRznEd6-Ghostty创始人-我现在如何用AI写代码？]] — Ghostty AI 编程
+- [[tutorials/BV1VFczzSEsn-OpenClaw实战-21个绝佳使用案例]] — OpenClaw 案例
+- [[tutorials/BV1aRwKzoEMU-OpenClaw实战-Tiktok自动运营-完整工作流]] — OpenClaw TikTok
+- [[tutorials/BV1D1w3zMEur-Intuition-CEO-AI革命不是软件-是农场-矿山和卡车]] — 物理 AI
+- [[tutorials/BV1jFAHzCEMw-GPT-5.4测评-OpenAI-王者归来]] — GPT 5.4 测评
+- [[tutorials/BV1ohDzBwEJN-Claude设计主管-Cowork揭秘-40分钟教程]] — Cowork 教程
+- [[tutorials/BV1HwdjBHENb-Claude-Code实战-鲜为人知的-Claude-Code-工作流]] — Claude Code 工作流
+- [[tutorials/BV1q1dWBNEVv-Figma-CEO-如何让AI-设计更有品味-]] — AI 设计品味
+- [[tutorials/BV1H59yBFECR-大神Geoff-Ralph-Loops的-基础设施]] — Ralph Loops 基础设施
+- [[tutorials/BV1X2rQBTE9p-上下文工程现状-Agentic-RAG-上下文腐烂-MCP-SubAgent]] — 上下文工程现状
+- [[tutorials/BV1paf9BTEBk-OpenClaw：现场演示如何使用]] — OpenClaw 演示
+- [[tutorials/BV1G3zXBPEUk-ClawdBot：席卷硅谷!-最新AI工具]] — ClawdBot 工具
+- [[tutorials/BV1c2BTBUEMK-IOS开发-现场演示如何开发一个月入10w美元的APP]] — iOS 开发
+- [[tutorials/BV1PMqjBkEPJ-Chatgpt功能详解-37-分钟了解所有-ChatGPT-功能]] — ChatGPT 功能
+- [[tutorials/BV19MzXBNESV-OpenAI官方-Codex新手教程]] — Codex 教程
+
+</details>
+
 ## 按 UP 主索引
 
+- [[Easonlee的AI笔记]] — 71 视频
 - [[GoldenSpiderAI]] — 1 视频
 - [[Deepset]] — 1 视频
 - [[云途的AI之路]] — 1 视频
 - [[小韩]] — 1 视频
 - [[Noah Brier]] — 1 视频
 - [[Every]] — 1 视频
-- [[Easonlee的AI笔记]] — 32 视频
+
+## 能力地图
+
+参见 [[capabilities/map]] — 9 项一级能力、50 个概念的知识-能力映射

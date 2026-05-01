@@ -4,6 +4,22 @@
 
 ## 2026-05-01
 
+### [architecture] Sharkbase 七层架构升级
+- **时间**: 2026-05-01
+- **变更**: 从三层知识库升级到七层能力发动机
+- **新增目录**: capabilities/、practice/、assets/、evals/、config/
+- **新增文件**:
+  - capabilities/map.md — 9项一级能力地图 + 知识-能力映射表
+  - practice/task_template.md — 实践任务卡模板
+  - assets/asset_index.md — 资产索引
+  - assets/prompts/tutorialize_prompt.md、operationalize_prompt.md — 提示词资产
+  - evals/rubrics/tutorial_quality.md、concept_quality.md、task_quality.md — 评分标准
+  - config/local.yaml — 配置文件
+  - .env.example — 环境变量模板
+- **修复**: 移除 tutorialize.py 和 batch_ingest.py 中硬编码 API Key、修复 ingest.py --model 重复追加 bug
+- **更新**: CLAUDE.md 从"Bilibili知识库"重写为"Sharkbase知识发动机"，新增能力归位/实践任务/资产沉淀操作
+- **更新**: index.md 同步到75视频/50概念/3主题/63教程
+
 ### [batch] "AI工具实践"系列批量处理
 - **时间**: 2026-05-01
 - **系列**: AI工具实践 (Easonlee的AI笔记)，73个视频

@@ -1,0 +1,16 @@
+workspace:
+  bili_dir: "E:/bili"
+  b2t_dir: "E:/bili2text"
+  ffmpeg_dir: "C:/Users/11377/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin"
+  claude_cli: "C:/Users/11377/AppData/Roaming/npm/claude.cmd"
+  uv_path: "C:/Users/11377/.local/bin/uv.exe"
+
+models:
+  sensevoice_model: "E:/bili2text/models/sensevoice-onnx/iic/SenseVoiceSmall-Onnx"
+  kimi_model: "moonshot-v1-auto"
+  kimi_api_base: "https://api.kimi.com/coding/"
+
+pipeline:
+  chunk_duration: 300
+  transcribe_timeout: 1800
+  kimi_timeout: 600
