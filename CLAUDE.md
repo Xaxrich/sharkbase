@@ -72,14 +72,18 @@ API 配置：
 - 模型：`moonshot-v1-auto`
 - API Key 通过 `KIMI_API_KEY` 环境变量配置（必需）
 
-### operationalize — 知识转能力资产
+### operationalize — 知识转能力资产 (v1)
 
 将教程文章转化为可训练、可实践、可评估、可复用的能力资产。
 
+运行 `python scripts/operationalize.py --all --dry-run` 查看待处理列表。
+
 ```
 python scripts/operationalize.py BV1VczqBREQ8           # 处理单个教程
-python scripts/operationalize.py BV1VczqBREQ8 --force   # 覆盖已有输出
-python scripts/operationalize.py --all                   # 处理所有已有教程
+python scripts/operationalize.py BV1VczqBREQ8 --force   # 覆盖已有输出 / 重试失败
+python scripts/operationalize.py --all                   # 处理所有待处理教程
+python scripts/operationalize.py --all --dry-run         # 仅显示待处理列表，不执行
+python scripts/operationalize.py --all --limit 3          # 最多处理 3 个
 ```
 
 前提：视频必须已经 tutorialize（有 `wiki/tutorials/BVxxx-*.md`）。
@@ -88,16 +92,21 @@ python scripts/operationalize.py --all                   # 处理所有已有教
 1. 读取 `assets/prompts/operationalize_prompt.md`
 2. 将教程文章内容替换 `{tutorial}` 占位符
 3. 调用 Kimi API 生成含 XML 标签的结构化输出
-4. 解析 5 个 XML 块：`<practice_task>` `<prompts>` `<sop>` `<checklist>` `<eval_report>`
-5. 写入对应文件：
+4. 解析 5 个 XML 块：`<practice_task>` `<prompts>` `` `<checklist>` `<eval_report>`
+5. **5 个块全部存在**时写入文件并标记 `operationalize_status = "done"\；**有缺失**时保存 raw response 到 `evals/raw_responses/`，标记 `operationalize_status = "failed"`
+6. 写入对应文件（路径为 repo-relative）：
    - `practice/tasks/BVxxx-task.md` — 代表性任务
    - `assets/prompts/BVxxx-prompts.md` — 可复用 Prompt
    - `assets/sops/BVxxx-sop.md` — 标准操作流程
    - `assets/checklists/BVxxx-checklist.md` — 检查清单
    - `evals/reports/BVxxx-operationalize.md` — 评估报告
-6. 更新 `sources/registry.json`（`operationalized_at` + `operationalize_outputs`）
+7. 更新 `sources/registry.json`（`operationalize_status` + `operationalize_outputs` + `missing_blocks`）
 
-重复执行默认跳过，`--force` 时覆盖。
+状态规则：
+- `done`：5 个块全部解析成功，文件已写入
+- `failed`：有块缺失，raw response 已保存，可用 `--force` 重试
+- `skipped`：C 级内容或手动跳过
+- 重复执行默认跳过 `done` 的视频，`--force` 时覆盖
 
 ### query — 知识查询
 

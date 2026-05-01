@@ -9,6 +9,8 @@ Usage:
     python scripts/operationalize.py BV1VczqBREQ8
     python scripts/operationalize.py BV1VczqBREQ8 --force
     python scripts/operationalize.py --all
+    python scripts/operationalize.py --all --dry-run
+    python scripts/operationalize.py --all --limit 3
 """
 import argparse
 import json
@@ -38,9 +40,13 @@ ASSETS_PROMPTS_DIR = ROOT / "assets" / "prompts"
 ASSETS_SOPS_DIR = ROOT / "assets" / "sops"
 ASSETS_CHECKLISTS_DIR = ROOT / "assets" / "checklists"
 EVALS_REPORTS_DIR = ROOT / "evals" / "reports"
+EVALS_RAW_DIR = ROOT / "evals" / "raw_responses"
 
 # Prompt from assets/prompts/ (the authoritative source)
 PROMPT_FILE = ROOT / "assets" / "prompts" / "operationalize_prompt.md"
+
+# Required blocks that must all be present for a successful run
+REQUIRED_BLOCKS = {"practice_task", "prompts", "sop", "checklist", "eval_report"}
 
 # Block definitions: (tag_name, output_dir, filename_suffix, frontmatter_type)
 BLOCK_DEFS = [
@@ -84,11 +90,18 @@ def find_existing_outputs(bv: str) -> dict[str, Path]:
     """Check which output files already exist for this BV."""
     existing = {}
     for tag, out_dir, suffix, _ in BLOCK_DEFS:
-        pattern = f"{bv}-{suffix}.md"
-        path = out_dir / pattern
+        path = out_dir / f"{bv}-{suffix}.md"
         if path.exists():
             existing[tag] = path
     return existing
+
+
+def relpath(path: Path) -> str:
+    """Convert absolute path to repo-relative path using / as separator."""
+    try:
+        return str(path.relative_to(ROOT)).replace("\\", "/")
+    except ValueError:
+        return str(path)
 
 
 def call_kimi(prompt_text: str) -> str:
@@ -119,20 +132,9 @@ def call_kimi(prompt_text: str) -> str:
 
 
 def parse_blocks(text: str) -> dict[str, str]:
-    """Parse XML-like blocks from the Kimi response.
-
-    Expected format:
-        <practice_task>...</practice_task>
-        <prompts>...</prompts>
-        <sop>...</sop>
-        <checklist>...</checklist>
-        <eval_report>...</eval_report>
-
-    Returns dict mapping tag names to their content.
-    """
+    """Parse XML-like blocks from the Kimi response."""
     blocks = {}
-    tag_names = [d[0] for d in BLOCK_DEFS]
-    for tag in tag_names:
+    for tag in REQUIRED_BLOCKS:
         pattern = rf"<{tag}>(.*?)</{tag}>"
         match = re.search(pattern, text, re.DOTALL)
         if match:
@@ -146,10 +148,17 @@ def write_output(bv: str, title: str, tag: str, content: str, out_dir: Path, suf
     filename = f"{bv}-{suffix}.md"
     path = out_dir / filename
 
+    tutorial_rel = relpath(TUTORIALS_DIR / f"{bv}-*.md").replace("*", title.replace("/", "-").replace("\\", "-").replace(":", "-")[:60])
+
     frontmatter = f"""---
 type: {fm_type}
 bv: {bv}
 title: "{title}"
+source_type: tutorial
+source_tutorial: "{tutorial_rel}"
+capability: []
+secondary_capability: []
+status: draft
 generated_at: {time.strftime('%Y-%m-%dT%H:%M:%S')}
 model: {KIMI_MODEL}
 ---
@@ -159,21 +168,32 @@ model: {KIMI_MODEL}
     return path
 
 
-def update_registry(bv: str, output_paths: dict[str, Path]):
-    """Update registry with operationalize output paths and timestamp."""
+def update_registry(bv: str, output_paths: dict[str, Path], status: str, missing_blocks: list[str] | None = None):
+    """Update registry with operationalize output paths, status, and timestamp."""
     registry = load_registry()
     for video in registry.get("videos", []):
         if video["bv"] == bv:
             video["operationalized_at"] = time.strftime('%Y-%m-%dT%H:%M:%S')
-            video["operationalize_outputs"] = {
-                "task": str(output_paths.get("practice_task", "")),
-                "prompts": str(output_paths.get("prompts", "")),
-                "sop": str(output_paths.get("sop", "")),
-                "checklist": str(output_paths.get("checklist", "")),
-                "eval_report": str(output_paths.get("eval_report", "")),
-            }
+            video["operationalize_status"] = status
+            video["operationalize_outputs"] = {}
+            for tag, out_dir, suffix, _ in BLOCK_DEFS:
+                path = output_paths.get(tag)
+                if path:
+                    video["operationalize_outputs"][tag] = relpath(path)
+            if missing_blocks:
+                video["missing_blocks"] = missing_blocks
+            elif "missing_blocks" in video:
+                del video["missing_blocks"]
             break
     save_registry(registry)
+
+
+def save_raw_response(bv: str, response: str):
+    """Save raw Kimi response for debugging when block parsing fails."""
+    EVALS_RAW_DIR.mkdir(parents=True, exist_ok=True)
+    path = EVALS_RAW_DIR / f"{bv}-operationalize-raw.md"
+    path.write_text(f"# Raw Kimi Response for {bv}\n\n{response}\n", encoding="utf-8")
+    print(f"  Raw response saved to: {relpath(path)}")
 
 
 def operationalize(bv: str, force: bool = False) -> bool:
@@ -188,17 +208,22 @@ def operationalize(bv: str, force: bool = False) -> bool:
     video_info = find_video_info(bv)
     title = video_info.get("title", bv)
 
-    # Check existing outputs
+    # Check registry status — skip if already done (unless force)
+    if not force and video_info.get("operationalize_status") == "done":
+        existing = find_existing_outputs(bv)
+        print(f"  Already done: {len(existing)}/5 files (use --force to overwrite)")
+        return True
+
+    # Check existing outputs (for partial runs)
     existing = find_existing_outputs(bv)
     if existing and not force:
-        print(f"  Already operationalized: {len(existing)}/5 files exist (use --force to overwrite)")
+        print(f"  Partial output exists: {len(existing)}/5 files (use --force to overwrite)")
         for tag, path in existing.items():
             print(f"    {tag}: {path.name}")
         return True
 
     # Read tutorial content (strip frontmatter)
     raw = tutorial_path.read_text(encoding="utf-8")
-    # Remove YAML frontmatter if present
     if raw.startswith("---"):
         parts = raw.split("---", 2)
         if len(parts) >= 3:
@@ -226,31 +251,61 @@ def operationalize(bv: str, force: bool = False) -> bool:
 
     # Parse blocks
     blocks = parse_blocks(response)
-    if not blocks:
-        print(f"  WARNING: No parseable blocks found in response")
-        print(f"  Response preview: {response[:500]}")
-        # Save raw response as eval report so nothing is lost
-        blocks["eval_report"] = f"# Raw Response (parsing failed)\n\n{response}"
+    missing = REQUIRED_BLOCKS - set(blocks.keys())
 
-    print(f"  Parsed blocks: {list(blocks.keys())}", flush=True)
+    if missing:
+        print(f"  WARNING: Missing blocks: {sorted(missing)}")
+        print(f"  Present blocks: {sorted(blocks.keys())}")
+        save_raw_response(bv, response)
+        update_registry(bv, {}, status="failed", missing_blocks=sorted(missing))
+        return False
+
+    print(f"  All {len(blocks)} blocks parsed", flush=True)
 
     # Write outputs
     print(f"[3/3] Writing output files...", flush=True)
     output_paths = {}
     for tag, out_dir, suffix, fm_type in BLOCK_DEFS:
-        content = blocks.get(tag)
-        if content:
-            path = write_output(bv, title, tag, content, out_dir, suffix, fm_type)
-            output_paths[tag] = path
-            print(f"  {tag}: {path.name}", flush=True)
-        else:
-            print(f"  {tag}: (missing in response)", flush=True)
+        content = blocks[tag]
+        path = write_output(bv, title, tag, content, out_dir, suffix, fm_type)
+        output_paths[tag] = path
+        print(f"  {tag}: {path.name}", flush=True)
 
-    # Update registry
-    update_registry(bv, output_paths)
-    print(f"  Registry updated", flush=True)
+    # Update registry — success
+    update_registry(bv, output_paths, status="done")
+    print(f"  Registry updated (status=done)", flush=True)
 
     return True
+
+
+def dry_run():
+    """Show what would be processed without calling Kimi or writing files."""
+    registry = load_registry()
+    videos = [v for v in registry.get("videos", []) if v.get("status") == "ingested"]
+
+    eligible = []
+    for v in videos:
+        if find_tutorial(v["bv"]):
+            eligible.append(v)
+
+    print(f"DRY RUN — {len(eligible)} tutorialized videos eligible for operationalization:\n")
+
+    for i, v in enumerate(eligible, 1):
+        bv = v["bv"]
+        title = v.get("title", "?")
+        status = v.get("operationalize_status", "none")
+        existing = find_existing_outputs(bv)
+        existing_tags = sorted(existing.keys())
+        missing = sorted(REQUIRED_BLOCKS - set(existing_tags))
+
+        status_icon = {"done": "OK", "failed": "FAIL", "none": "NEW", "skipped": "SKIP"}.get(status, "?")
+        print(f"  {i:3d}. [{status_icon}] {bv} — {title}")
+        if existing_tags:
+            print(f"       Existing: {', '.join(existing_tags)}")
+        if missing:
+            print(f"       Missing:  {', '.join(missing)}")
+
+    print(f"\nNo files written. Use without --dry-run to process.")
 
 
 def main():
@@ -259,23 +314,47 @@ def main():
     )
     parser.add_argument("bv", nargs="?", help="BV number of the video")
     parser.add_argument("--all", action="store_true", help="Process all tutorialized videos")
-    parser.add_argument("--force", action="store_true", help="Overwrite existing outputs")
+    parser.add_argument("--force", action="store_true", help="Overwrite existing outputs / re-process failed")
+    parser.add_argument("--dry-run", action="store_true", help="Show what would be processed without running")
+    parser.add_argument("--limit", type=int, default=0, help="With --all, process at most N videos")
     args = parser.parse_args()
+
+    if args.dry_run:
+        dry_run()
+        return
 
     if args.all:
         registry = load_registry()
         videos = [v for v in registry.get("videos", []) if v.get("status") == "ingested"]
-        # Filter to videos that have tutorials
-        eligible = []
-        for v in videos:
-            if find_tutorial(v["bv"]):
-                eligible.append(v)
-        print(f"Processing {len(eligible)} tutorialized videos...")
+        eligible = [v for v in videos if find_tutorial(v["bv"])]
+
+        # Skip already-done unless --force
+        if not args.force:
+            eligible = [v for v in eligible if v.get("operationalize_status") != "done"]
+            if eligible:
+                print(f"Skipping already-done videos. Processing {len(eligible)} remaining (use --force to re-process all)")
+            else:
+                print("All videos already operationalized (use --force to re-process)")
+                return
+
+        # Apply limit
+        if args.limit > 0:
+            eligible = eligible[:args.limit]
+            print(f"Processing {len(eligible)} videos (limited to {args.limit})")
+        else:
+            print(f"Processing {len(eligible)} tutorialized videos...")
+
+        success = 0
+        failed = 0
         for i, video in enumerate(eligible, 1):
             bv = video["bv"]
             print(f"\n--- [{i}/{len(eligible)}] {bv}: {video.get('title', '?')} ---")
-            operationalize(bv, force=args.force)
-        print(f"\nAll done!")
+            if operationalize(bv, force=args.force):
+                success += 1
+            else:
+                failed += 1
+
+        print(f"\nDone! {success} succeeded, {failed} failed")
     elif args.bv:
         operationalize(args.bv, force=args.force)
     else:
