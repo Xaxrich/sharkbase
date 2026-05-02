@@ -63,15 +63,15 @@ def infer_status(bv: str, existing: dict, missing: list[str], registry_status: s
     has_tutorial = any(TUTORIAL_DIR.glob(f"{bv}-*.md")) if TUTORIAL_DIR.exists() else False
     has_raw_response = any(RAW_RESPONSE_DIR.glob(f"{bv}-*")) if RAW_RESPONSE_DIR.exists() else False
 
-    if len(existing) == 5:
+    # Check inconsistent FIRST: registry says done but files are missing
+    if registry_status == "done" and len(existing) < 5:
+        return "inconsistent", {"operationalize_status": "inconsistent", "operationalize_outputs": existing, "missing_outputs": missing}
+    elif len(existing) == 5:
         # All files present
         return "done", {"operationalize_status": "done", "operationalize_outputs": existing, "missing_outputs": []}
     elif len(existing) > 0:
         # Some files present
         return "partial", {"operationalize_status": "partial", "operationalize_outputs": existing, "missing_outputs": missing}
-    elif registry_status == "done" and len(existing) < 5:
-        # Registry says done but files missing
-        return "inconsistent", {"operationalize_status": "inconsistent", "operationalize_outputs": existing, "missing_outputs": missing}
     elif has_raw_response:
         return "failed", {"operationalize_status": "failed", "operationalize_outputs": existing, "missing_outputs": missing}
     elif has_tutorial:

@@ -6,7 +6,7 @@
 
 | 任务 | 来源 | 能力 | 产物 | 进入原因 | 质量状态 | 产物路径 | 状态 |
 |------|------|------|------|----------|----------|----------|------|
-| 用 EARS 格式重写现有需求 | BV1VczqBREQ8 | 产品定义与规格设计 | EARS 需求文档 + 歧义消除对比表 | 当前主线P0，直接服务 Spec/Agent 发包能力 | task_quality: pending | practice/tasks/BV1VczqBREQ8-task.md | todo |
+| (暂无) | | | | | | | |
 
 ## P1 可选训练
 
@@ -18,7 +18,7 @@
 
 | 任务 | 来源 | 能力 | 完成日期 | 产出物 | 复盘 |
 |------|------|------|----------|--------|------|
-| (暂无) | | | | | |
+| 用 EARS 格式重写现有需求 | BV1VczqBREQ8 | 产品定义与规格设计 | 2026-05-02 | practice/outputs/BV1VczqBREQ8-ears-requirements.md | [[BV1VczqBREQ8-ears-review]] |
 
 ## Dropped
 

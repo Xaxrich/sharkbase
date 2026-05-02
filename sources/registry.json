@@ -840,6 +840,13 @@
           "status": "pending_manual_score",
           "report": "evals/reports/BV1VczqBREQ8-task-quality.md"
         }
+      },
+      "practice": {
+        "status": "done",
+        "completed_task": "用 EARS 格式重写现有需求",
+        "output": "practice/outputs/BV1VczqBREQ8-ears-requirements.md",
+        "review": "practice/reviews/BV1VczqBREQ8-ears-review.md",
+        "completed_at": "2026-05-02T12:15:51.182877"
       }
     },
     {
