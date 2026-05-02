@@ -4,6 +4,10 @@ bv: BV1VczqBREQ8
 title: "亚马逊Kiro团队：规范驱动开发"
 generated_at: 2026-05-01T12:38:15
 model: moonshot-v1-auto
+revision_status: revised_after_practice
+revision_source: practice/reviews/BV1VczqBREQ8-ears-review.md
+revision_date: 2026-05-02
+status: active
 ---
 
 ## 需求编写检查清单
@@ -15,6 +19,10 @@ model: moonshot-v1-auto
 - [ ] 非功能需求（性能、安全、可用性）有对应条目
 - [ ] 需求之间无冲突
 - [ ] 一个不参与讨论的人阅读后能无歧义理解系统行为
+- [ ] 是否识别了原始需求未明说的边界条件？
+- [ ] 是否把隐含需求转成独立 EARS 条目？
+- [ ] 是否输出了歧义消除对比表？
+- [ ] 是否区分了"业务行为"与"实现选型"？
 
 ## Prompt 去偏见检查清单
 

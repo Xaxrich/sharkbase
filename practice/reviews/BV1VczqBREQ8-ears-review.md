@@ -62,6 +62,8 @@ created: 2026-05-02
 
 ## 下一步动作
 
-- [ ] 将 review 结果回写到 registry
-- [ ] 将 P0 任务移到 Done
-- [ ] 考虑将 EARS 需求写的 SOP 修正建议落地
+- [x] 将 review 结果回写到 registry
+- [x] 将 P0 任务移到 Done
+- [ ] 修正 practice/tasks/BV1VczqBREQ8-task.md：增加"识别隐含需求"步骤
+- [ ] 修正 assets/sops/BV1VczqBREQ8-sop.md：补充歧义消除对比表为必需产物
+- [ ] 修正 assets/checklists/BV1VczqBREQ8-checklist.md：增加边界条件检查项
