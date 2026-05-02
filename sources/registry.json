@@ -19,7 +19,22 @@
         "移动应用",
         "MCP"
       ],
-      "status": "ingested"
+      "status": "ingested",
+      "operationalized_at": "2026-05-01T14:00:10",
+      "operationalize_status": "done",
+      "operationalize_outputs": {
+        "practice_task": "practice/tasks/BV1GBPGzSE4u-task.md",
+        "prompts": "assets/prompts/BV1GBPGzSE4u-prompts.md",
+        "sop": "assets/sops/BV1GBPGzSE4u-sop.md",
+        "checklist": "assets/checklists/BV1GBPGzSE4u-checklist.md",
+        "eval_report": "evals/reports/BV1GBPGzSE4u-operationalize.md"
+      },
+      "evals": {
+        "task_quality": {
+          "status": "pending_manual_score",
+          "report": "evals/reports/BV1GBPGzSE4u-task-quality.md"
+        }
+      }
     },
     {
       "bv": "BV1D9ojBzEAd",
@@ -808,7 +823,24 @@
       "status": "ingested",
       "series": "AI工具实践",
       "duration_min": 63,
-      "tier": "A"
+      "tier": "A",
+      "operationalized_at": "2026-05-01T12:38:15",
+      "operationalize_outputs": {
+        "practice_task": "practice/tasks/BV1VczqBREQ8-task.md",
+        "prompts": "assets/prompts/BV1VczqBREQ8-prompts.md",
+        "sop": "assets/sops/BV1VczqBREQ8-sop.md",
+        "checklist": "assets/checklists/BV1VczqBREQ8-checklist.md",
+        "eval_report": "evals/reports/BV1VczqBREQ8-operationalize.md"
+      },
+      "operationalize_status": "done",
+      "missing_outputs": [],
+      "reconciled_at": "2026-05-02T11:59:37.170986",
+      "evals": {
+        "task_quality": {
+          "status": "pending_manual_score",
+          "report": "evals/reports/BV1VczqBREQ8-task-quality.md"
+        }
+      }
     },
     {
       "bv": "BV1aPzqBXETc",
