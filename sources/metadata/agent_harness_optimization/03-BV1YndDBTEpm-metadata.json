@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "https://www.bilibili.com/video/BV1YndDBTEpm",
+    "kind": "bilibili",
+    "bv": "BV1YndDBTEpm",
+    "url": "https://www.bilibili.com/video/BV1YndDBTEpm",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": "E:\\bili2text\\.b2t\\audio\\BV1YndDBTEpm.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1YndDBTEpm.mp4",
+  "download": {
+    "title": "[基于经验的Agent优化]01期-EvoMap和清华的合作论文-把经验编码成控制信号，让进化真正生效（简介附原文链接）",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 1044.805,
+    "id": "BV1YndDBTEpm",
+    "webpage_url": "https://www.bilibili.com/video/BV1YndDBTEpm"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:43:51",
+  "series": "Agent自动优化（Agent进化） [论文]"
+}

@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "BV1rQ9JBoECh",
+    "kind": "bilibili",
+    "bv": "BV1rQ9JBoECh",
+    "url": "https://www.bilibili.com/video/BV1rQ9JBoECh",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": ".b2t\\audio\\Harness自动优化-01期-Meta-Harness-斯坦福爆火论文-别只卷模型-来-自动发明模型外壳-简介附原文链接.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1rQ9JBoECh.mp4",
+  "download": {
+    "title": "[Harness自动优化]01期-Meta-Harness-斯坦福爆火论文-别只卷模型，来“自动发明模型外壳”（简介附原文链接）",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 1111.074,
+    "id": "BV1rQ9JBoECh",
+    "webpage_url": "https://www.bilibili.com/video/BV1rQ9JBoECh"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:37:51.958740",
+  "transcript_path": ".b2t\\transcripts\\original\\Harness自动优化-01期-Meta-Harness-斯坦福爆火论文-别只卷模型-来-自动发明模型外壳-简介附原文链接-20260602-023751.txt"
+}

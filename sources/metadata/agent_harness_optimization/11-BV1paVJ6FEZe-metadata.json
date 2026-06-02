@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "https://www.bilibili.com/video/BV1paVJ6FEZe",
+    "kind": "bilibili",
+    "bv": "BV1paVJ6FEZe",
+    "url": "https://www.bilibili.com/video/BV1paVJ6FEZe",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": "E:\\bili2text\\.b2t\\audio\\BV1paVJ6FEZe.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1paVJ6FEZe.mp4",
+  "download": {
+    "title": "[Agent强化学习] ACL26-CoEvolve-让Agent与数据分布共同进化",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 502.57,
+    "id": "BV1paVJ6FEZe",
+    "webpage_url": "https://www.bilibili.com/video/BV1paVJ6FEZe"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:46:19",
+  "series": "Agent自动优化（Agent进化） [论文]"
+}

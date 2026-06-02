@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "https://www.bilibili.com/video/BV1dC5268Eja",
+    "kind": "bilibili",
+    "bv": "BV1dC5268Eja",
+    "url": "https://www.bilibili.com/video/BV1dC5268Eja",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": "E:\\bili2text\\.b2t\\audio\\BV1dC5268Eja.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1dC5268Eja.mp4",
+  "download": {
+    "title": "[基于skill的Agent进化]阿里DreamX团队论文-SkillClaw-聚合多用户轨迹得到稳定进化方向，夜间验证保证有效性",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 633.277,
+    "id": "BV1dC5268Eja",
+    "webpage_url": "https://www.bilibili.com/video/BV1dC5268Eja"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:44:32",
+  "series": "Agent自动优化（Agent进化） [论文]"
+}

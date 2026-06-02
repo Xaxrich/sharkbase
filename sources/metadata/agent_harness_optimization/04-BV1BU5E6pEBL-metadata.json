@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "https://www.bilibili.com/video/BV1BU5E6pEBL",
+    "kind": "bilibili",
+    "bv": "BV1BU5E6pEBL",
+    "url": "https://www.bilibili.com/video/BV1BU5E6pEBL",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": "E:\\bili2text\\.b2t\\audio\\BV1BU5E6pEBL.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1BU5E6pEBL.mp4",
+  "download": {
+    "title": "[基于skill的Agent进化] 阿里Qwen新论文-Trace2skill-分层整合从不同轨迹中得到的修改建议",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 739.555,
+    "id": "BV1BU5E6pEBL",
+    "webpage_url": "https://www.bilibili.com/video/BV1BU5E6pEBL"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:44:13",
+  "series": "Agent自动优化（Agent进化） [论文]"
+}

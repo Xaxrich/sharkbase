@@ -26,7 +26,7 @@ created: 2026-05-01
 | 知识输入与研究综合 | [[第二大脑]] [[思考模式]] [[上下文工程]] [[源码锚定]] | [[BV15UndzSE6x-Claude Code与Obsidian打造第二大脑]] [[BV1VUqLBxEWg-NotebookLM实战AI时代知识管理利器]] |
 | 产品定义与规格设计 | [[MVP思维]] [[规范驱动开发]] [[基于属性的测试]] [[原型优先开发]] | [[BV1VczqBREQ8-亚马逊Kiro团队规范驱动开发]] [[BV1Ru4QzHEZR-ChatPRD产品经理与AI]] |
 | AI 辅助开发与 Agent 调度 | [[驾驭工程]] [[Vibe Coding]] [[复利工程]] [[确定性输出]] [[代码组织与可维护性]] | [[BV1bJndzzELm-Anthropic官方教程-30分钟掌握Claude-Code]] [[BV1FgveB7Ebx-Claude Code实战如何将个人产出提高15倍]] |
-| Agent 架构与工作流设计 | [[Agent原生架构]] [[智能体分工]] [[Claude Skill]] [[任务即子Agent]] [[上下文智能]] | [[BV1xEzqBVEeb-ClaudeCowork是我们所有人的ClaudeCode]] [[BV1aPzqBXETc-如何开发Agent-Native的App]] |
+| Agent 架构与工作流设计 | [[Agent原生架构]] [[智能体分工]] [[Claude Skill]] [[任务即子Agent]] [[上下文智能]] [[Harness自动优化]] [[Skill进化]] [[经验进化]] | [[BV1rQ9JBoECh-Meta-Harness自动发明模型外壳]] [[BV1dFd9B7EvW-SkillX分层技能库]] [[BV1n9Gd6oEUK-AHE可观测Harness自进化]] |
 | 评估体系与质量校准 | [[AI评估体系]] [[LLM-as-Judge]] [[AI Agent自验证循环]] | [[BV1gXqLBXE87-AI评估实战50分钟完整入门课程]] [[BV1zvBgBXE5E-AI评估实战50分钟AI评估大师课]] |
 | 上线验证与增长反馈 | [[乘风策略]] [[AI搜索优化]] [[内部dogfooding]] | [[BV1GAzqBWEWx-AI产品经理如何用AI做原型设计战略和个人OS]] |
 | 资产化与方法论输出 | [[复利工程]] [[复利规划]] [[个人操作系统]] | [[BV1QeZ2BZEFZ-Claude Code实战复合工程让AI越用越懂你]] [[BV1hRndz1E4v-用ClaudeCode搭建LifeOS]] |

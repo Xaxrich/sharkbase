@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "https://www.bilibili.com/video/BV1geVD6FETm",
+    "kind": "bilibili",
+    "bv": "BV1geVD6FETm",
+    "url": "https://www.bilibili.com/video/BV1geVD6FETm",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": "E:\\bili2text\\.b2t\\audio\\BV1geVD6FETm.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1geVD6FETm.mp4",
+  "download": {
+    "title": "[Skill进化] 06期 | 字节MUSE-Autoskill：给Agent装上Skill生命周期管理，自动创建、测试、维护Skill",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 798.165,
+    "id": "BV1geVD6FETm",
+    "webpage_url": "https://www.bilibili.com/video/BV1geVD6FETm"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:46:41",
+  "series": "Agent自动优化（Agent进化） [论文]"
+}

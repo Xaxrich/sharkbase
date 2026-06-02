@@ -1,0 +1,122 @@
+[
+  {
+    "index": 1,
+    "bv": "BV1rQ9JBoECh",
+    "title": "[Harness自动优化]01期-Meta-Harness-斯坦福爆火论文-别只卷模型，来“自动发明模型外壳”（简介附原文链接）",
+    "url": "https://www.bilibili.com/video/BV1rQ9JBoECh",
+    "wiki_page": "wiki/videos/BV1rQ9JBoECh-Meta-Harness自动发明模型外壳.md",
+    "tutorial_page": "wiki/tutorials/BV1rQ9JBoECh-Meta-Harness自动发明模型外壳.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/01-BV1rQ9JBoECh-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/01-BV1rQ9JBoECh-metadata.json"
+  },
+  {
+    "index": 2,
+    "bv": "BV1dFd9B7EvW",
+    "title": "[基于skill的Agent进化]01期-将强Agent的成功轨迹构建为分层Skill库，实现可迁移的泛用性进化",
+    "url": "https://www.bilibili.com/video/BV1dFd9B7EvW",
+    "wiki_page": "wiki/videos/BV1dFd9B7EvW-SkillX分层技能库.md",
+    "tutorial_page": "wiki/tutorials/BV1dFd9B7EvW-SkillX分层技能库.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/02-BV1dFd9B7EvW-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/02-BV1dFd9B7EvW-metadata.json"
+  },
+  {
+    "index": 3,
+    "bv": "BV1YndDBTEpm",
+    "title": "[基于经验的Agent优化]01期-EvoMap和清华的合作论文-把经验编码成控制信号，让进化真正生效（简介附原文链接）",
+    "url": "https://www.bilibili.com/video/BV1YndDBTEpm",
+    "wiki_page": "wiki/videos/BV1YndDBTEpm-EvoMap策略基因.md",
+    "tutorial_page": "wiki/tutorials/BV1YndDBTEpm-EvoMap策略基因.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/03-BV1YndDBTEpm-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/03-BV1YndDBTEpm-metadata.json"
+  },
+  {
+    "index": 4,
+    "bv": "BV1BU5E6pEBL",
+    "title": "[基于skill的Agent进化] 阿里Qwen新论文-Trace2skill-分层整合从不同轨迹中得到的修改建议",
+    "url": "https://www.bilibili.com/video/BV1BU5E6pEBL",
+    "wiki_page": "wiki/videos/BV1BU5E6pEBL-Trace2Skill轨迹补丁合并.md",
+    "tutorial_page": "wiki/tutorials/BV1BU5E6pEBL-Trace2Skill轨迹补丁合并.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/04-BV1BU5E6pEBL-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/04-BV1BU5E6pEBL-metadata.json"
+  },
+  {
+    "index": 5,
+    "bv": "BV1dC5268Eja",
+    "title": "[基于skill的Agent进化]阿里DreamX团队论文-SkillClaw-聚合多用户轨迹得到稳定进化方向，夜间验证保证有效性",
+    "url": "https://www.bilibili.com/video/BV1dC5268Eja",
+    "wiki_page": "wiki/videos/BV1dC5268Eja-SkillClaw多用户轨迹进化.md",
+    "tutorial_page": "wiki/tutorials/BV1dC5268Eja-SkillClaw多用户轨迹进化.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/05-BV1dC5268Eja-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/05-BV1dC5268Eja-metadata.json"
+  },
+  {
+    "index": 6,
+    "bv": "BV1XM526WEY6",
+    "title": "[基于skill进行ICRL]-美团论文-skill0-把skill逐步内化进模型参数",
+    "url": "https://www.bilibili.com/video/BV1XM526WEY6",
+    "wiki_page": "wiki/videos/BV1XM526WEY6-Skill0把技能内化到参数.md",
+    "tutorial_page": "wiki/tutorials/BV1XM526WEY6-Skill0把技能内化到参数.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/06-BV1XM526WEY6-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/06-BV1XM526WEY6-metadata.json"
+  },
+  {
+    "index": 7,
+    "bv": "BV1qS586HEdg",
+    "title": "[skill进化]-美团新论文-skill1-一个信号拆三份，同时学习skill使用全流程",
+    "url": "https://www.bilibili.com/video/BV1qS586HEdg",
+    "wiki_page": "wiki/videos/BV1qS586HEdg-Skill1统一训练选用写技能.md",
+    "tutorial_page": "wiki/tutorials/BV1qS586HEdg-Skill1统一训练选用写技能.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/07-BV1qS586HEdg-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/07-BV1qS586HEdg-metadata.json"
+  },
+  {
+    "index": 8,
+    "bv": "BV1n9Gd6oEUK",
+    "title": "[Harness自动优化]02期 | 复旦爆火论文-AHE-可观测体系驱动Harness自进化",
+    "url": "https://www.bilibili.com/video/BV1n9Gd6oEUK",
+    "wiki_page": "wiki/videos/BV1n9Gd6oEUK-AHE可观测Harness自进化.md",
+    "tutorial_page": "wiki/tutorials/BV1n9Gd6oEUK-AHE可观测Harness自进化.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/08-BV1n9Gd6oEUK-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/08-BV1n9Gd6oEUK-metadata.json"
+  },
+  {
+    "index": 9,
+    "bv": "BV1NTG26MEGv",
+    "title": "[Harness自动优化] 03期 | 谷歌×普林斯顿新论文-一边玩宝可梦，一边自动改写Agent Harness",
+    "url": "https://www.bilibili.com/video/BV1NTG26MEGv",
+    "wiki_page": "wiki/videos/BV1NTG26MEGv-Continual-Harness宝可梦长程自改.md",
+    "tutorial_page": "wiki/tutorials/BV1NTG26MEGv-Continual-Harness宝可梦长程自改.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/09-BV1NTG26MEGv-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/09-BV1NTG26MEGv-metadata.json"
+  },
+  {
+    "index": 10,
+    "bv": "BV11vG669EyX",
+    "title": "[skill进化] 清华爆火论文-Ctx2Skill-零标注自博弈，从文档提取技能",
+    "url": "https://www.bilibili.com/video/BV11vG669EyX",
+    "wiki_page": "wiki/videos/BV11vG669EyX-Ctx2Skill从上下文提技能.md",
+    "tutorial_page": "wiki/tutorials/BV11vG669EyX-Ctx2Skill从上下文提技能.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/10-BV11vG669EyX-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/10-BV11vG669EyX-metadata.json"
+  },
+  {
+    "index": 11,
+    "bv": "BV1paVJ6FEZe",
+    "title": "[Agent强化学习] ACL26-CoEvolve-让Agent与数据分布共同进化",
+    "url": "https://www.bilibili.com/video/BV1paVJ6FEZe",
+    "wiki_page": "wiki/videos/BV1paVJ6FEZe-CoEvolve数据分布共同进化.md",
+    "tutorial_page": "wiki/tutorials/BV1paVJ6FEZe-CoEvolve数据分布共同进化.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/11-BV1paVJ6FEZe-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/11-BV1paVJ6FEZe-metadata.json"
+  },
+  {
+    "index": 12,
+    "bv": "BV1geVD6FETm",
+    "title": "[Skill进化] 06期 | 字节MUSE-Autoskill：给Agent装上Skill生命周期管理，自动创建、测试、维护Skill",
+    "url": "https://www.bilibili.com/video/BV1geVD6FETm",
+    "wiki_page": "wiki/videos/BV1geVD6FETm-MUSE-Autoskill技能生命周期.md",
+    "tutorial_page": "wiki/tutorials/BV1geVD6FETm-MUSE-Autoskill技能生命周期.md",
+    "transcript": "sources/transcripts/agent_harness_optimization/12-BV1geVD6FETm-transcript.txt",
+    "metadata": "sources/metadata/agent_harness_optimization/12-BV1geVD6FETm-metadata.json"
+  }
+]

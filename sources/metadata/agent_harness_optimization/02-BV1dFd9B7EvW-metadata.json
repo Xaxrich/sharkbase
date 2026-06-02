@@ -1,0 +1,23 @@
+{
+  "source": {
+    "raw_input": "https://www.bilibili.com/video/BV1dFd9B7EvW",
+    "kind": "bilibili",
+    "bv": "BV1dFd9B7EvW",
+    "url": "https://www.bilibili.com/video/BV1dFd9B7EvW",
+    "path": null
+  },
+  "engine": "sensevoice",
+  "model": "E:\\bili2text\\models\\sensevoice-onnx\\iic\\SenseVoiceSmall-Onnx",
+  "audio_path": "E:\\bili2text\\.b2t\\audio\\BV1dFd9B7EvW.wav",
+  "video_path": "E:\\bili2text\\.b2t\\downloads\\BV1dFd9B7EvW.mp4",
+  "download": {
+    "title": "[基于skill的Agent进化]01期-SkillX-将强Agent的成功轨迹构建为分层Skill库，实现可迁移的泛用性进化",
+    "uploader": "Agent智能体深度研究院",
+    "duration": 1448.971,
+    "id": "BV1dFd9B7EvW",
+    "webpage_url": "https://www.bilibili.com/video/BV1dFd9B7EvW"
+  },
+  "language": "auto",
+  "generated_at": "2026-06-02T02:43:21",
+  "series": "Agent自动优化（Agent进化） [论文]"
+}
